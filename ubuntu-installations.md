@@ -63,3 +63,15 @@ To set up automount follow this commands:
 - `sudo umount -a` - unmount all partitions
 - `sudo mount -a` - mount all partitions but with new folders
 now you can go to /mnt/ and find your drives (sys, media in my case) and create links for it in your file manager
+
+## Unity notifications style
+Notify-osd core:
+- `sudo add-apt-repository ppa:leolik/leolik` - add repo
+- `sudo apt update && sudo apt install notify-osd` - update packages and install
+
+Notify-osd GUI:
+- `sudo add-apt-repository ppa:nilarimogard/webupd8` - add repo
+- `sudo apt update && sudo apt install notifyosdconfig` - update packages and install
+
+After that kill notify-os daemon by `pkill notify-osd`
+And launch notify-osd application
